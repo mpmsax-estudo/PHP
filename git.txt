@@ -1,0 +1,12 @@
+git init;
+git add *;
+git status;
+git commit -m "Primeiro Commit";
+# UM DESSES COMANDOS ADICIONOU O GIT MASTER
+175  git remote origin master https://github.com/mpmsax-estudo/PHP
+177  git remote add origin master https://github.com/mpmsax-estudo/PHP.git
+179  git remote add origin master PHP https://github.com/mpmsax-estudo/PHP.git
+180  git push origin master PHP https://github.com/mpmsax-estudo/PHP.git
+183  git push origin master https://github.com/mpmsax-estudo/PHP.git
+git remote show origin;
+git push origin master;
