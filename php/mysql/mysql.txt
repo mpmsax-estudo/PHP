@@ -1,0 +1,8 @@
+# Fazer isso em uma máquina virtual nova sem base de dados
+# Teste realizado no mariadb
+mysql < employees.sql 
+mysql employees < load_employees.dump 
+mysql -u root employees -e "select * from employees" | head;
+# Retirado de: 
+# https://dev.mysql.com/doc/employee/en/employees-installation.html 
+# https://github.com/datacharmer/test_db
