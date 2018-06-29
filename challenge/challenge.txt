@@ -1,0 +1,37 @@
+# mysql -u (usuario) root -e (comando) "show databases;"; (mostrar base de dados) (" aspas duplas para delimitar os comandos) (; encerra o comando de sql) (; encerra o comando de bash se quiser copiar e colar na tela é possível)
+
+mysql -u root -e "show databases;";
+
+# mysql -u (usuario) root -e (comando) "create database challenge;"; (criar base de dados challenge)
+
+mysql -u root -e "create database challenge;";
+
+mysql challenge < challenge_struct.sql;
+
+apt-get install aptitude;
+_________________________________________________________________________________________________________
+# Configuração Python 3.6.5
+wget https://www.python.org/ftp/python/3.6.5/Python-3.6.5.tar.xz; 
+
+# -x (extrair) f (arquivo) -C (local onde vai extrair);
+tar -xf Python-3.6.5.tar.xz -C /opt/;
+
+# Mudar para o diretório
+cd /opt/Python-3.6.5/;
+
+# Instalar pacote 
+aptitude install build-essential;
+
+# Compilar o Python
+./configure;
+make install;
+
+# DEU VÁRIOS ERROS NA INSTALAÇÃO DO MÓDULO MYSQL PARA O PYTHON 3.6
+# POR ISSO UTILIZEI O PYTHON 2.7
+_________________________________________________________________________________________________________
+
+
+mysql -u root -h localhost -p;
+
+grant all privileges on challenge.* to 'root'@'localhost' identified by 'password' with grant option;
+
