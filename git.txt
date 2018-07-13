@@ -9,4 +9,10 @@ git commit -m "Primeiro Commit";
 180  git push origin master PHP https://github.com/mpmsax-estudo/PHP.git
 183  git push origin master https://github.com/mpmsax-estudo/PHP.git
 git remote show origin;
+
+# Upload files to GitHub
 git push origin master;
+
+# Download files from GitHub
+git clone https://github.com/mpmsax-estudo/PHP.git;
+
