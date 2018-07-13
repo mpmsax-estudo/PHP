@@ -12,6 +12,8 @@ git remote show origin;
 
 # Upload files to GitHub
 git push origin master;
+#Username for 'https://github.com': mpmsax@gmail.com
+#Password for 'https://mpmsax@gmail.com@github.com':
 
 # Download files from GitHub
 git clone https://github.com/mpmsax-estudo/PHP.git;
