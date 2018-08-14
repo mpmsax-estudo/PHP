@@ -1,0 +1,146 @@
+lm(speed ~ dist, cars)
+lm(data=cars, formula=speed ~ dist)
+getwd() # Diretório de trabalho padrão e armazenamento de arquivos do R
+setwd("/home/marcos/Documents") # MOdificar diretorio de trabalho padrão e armazenamento de arquivos do R
+dir() # Mostrar aquivos que estão no diretório padrão
+
+ls() # Mostra variáveis definidas ?
+objects() # ver variáveis
+rm(var3) # Remover variável var3
+rm(list=objects()) # Remover todos os osbjetos listados
+ls() 
+# OU # 
+objects()
+
+getwd(); a=3; b=4 # pode se digitar mais de um comando digitando ;
+a
+b
+2/3
+getOption("OutDec") # Mostrar qual o separador decimal sendo utilizado
+options(OutDec=",") # Definir separador decimal a ser utilizado
+# Para alterar um parâmetro utilizar a opção options
+
+history(max.show=5)
+
+install.packages("ggplot2",dependencies=TRUE) # Instalar pacote
+remove.packages("ggplot2") # desinstalar pacote
+
+library(ggplot2)
+detach("package:ggplot2") # remover pacote da memória
+search() # Mostrar lista de pacotes carregados
+getOption("defaultPackages") # Mostrar pacotes carregados por padrão ao iniciar o R
+
+help.start() # Abrir no navegador a página inicial do manual do R
+help("options") # Mostrar página de ajuda referente a options
+?search # Mesmo que o de cima
+apropos("search") # Mostrar comandos com determinada função
+args("sd") # Mostrar argumentos da função
+sd # Mostrar código da função, digitar função "sd"
+
+save.image() # salva a imagem da seção
+save.image("ProjB.RData") # salva a imagem da seção em um arquivo para salvar diferentes projetos
+load(file="ProjB.RData") # carregar o arquivo de uma seção
+
+Declaração implícita - No R sem definir o tipo
+a=1
+
+Exemplo:
+var1 <- 10
+var1
+class (var1) # Retorna o tipo de variável
+typeof(var1) # Retorna o tipo da classe pai
+x <- 10
+x
+x[1]
+is.numeric(var1) # Retornar true se for numérico
+is.vector(var1) # 
+a <- NA
+is.na(a) # verificar se a variavel não está disponível
+var2 = "Estatística" # tipo Character
+var3 = 'Estatistica' # tipo Character
+class(var2)
+class(var2)
+x = paste(var2,var3) # concatenação de var2 com var3
+x
+idade = 22
+idade
+class(idade) # -> tipo numério
+idade = 22L
+class(idade) # -> tipo inteiro
+idade2 = as.integer(22)
+class(idade2) # -> tipo inteiro
+Pop <- 532L
+Cons <- 456677L
+Med <- Pop / Cons
+Med
+# ou
+Pop / Cons
+6 * 2 + 10
+6 * (2 + 10)
+
+abs(-100) # valor absoluto 
+log(2,base=5) # logaritimo de 2 na base 5
+factorial(4) # Fatorial
+sqrt(4) # Raiz Quadrada
+sin(10) # Seno de 10
+cos(10) # Coseno de 10
+tan(10) # Tangente de 10
+
+date();
+[1] "Fri Jun 29 16:21:31 2018"
+Sys.Date();
+[1] "2018-06-29"
+data <- as.Date("2013-01-31")
+data
+class(data)
+data2 <- as.Date("2013-01-25")
+dif <- data - data2
+dif
+-> Time difference 6 days
+
+data <- as.Date("2013-03-25")
+format(data, format="%d/%m/%y")
+format(data, format="%A, %d de %B de %Y")
+-> "segunda-feira, 25 de março de 2013"
+
+data()
+USArrests
+data(package = .packages(all.available=TRUE))
+library(cluster)
+agriculture
+help(agriculture)
+vetorNum <- c(10,2,3,6,5) # Criar um vetor numérico
+vetorChar <- c("a","b","c")
+vetorBool <- c(T,T,F,T)
+vetorNum
+vetorChar
+vetorBool
+vetorNum[c(1,2,4)]
+vetorNum[c(1:4)]
+vetorNum[vetorNum>3]
+vetorNum[-1]
+max(vetorNum)
+min(vetorNum)
+lenghth(vetorNum)
+sd(vetorNum) # desvio do vetor
+sort(vetNum)
+vetorNumsort <- sort (vetorNum)
+sort(vetorNum, decreasing=T)
+order(vetorNum) # Mostrar em ordem crescente a posição do indice
+vetorNum2 = c(4,5,3,9,12)
+vetorNum + vetorNum2
+vetorNum + 5 # Adiciona 5 em cada valor do vetor
+vetorNum3 <- c(1,2,3)
+length(vetorNum3) <- length(vetorNum)
+vetorNum3[4] <- 0
+vetorNum3
+vetorNum3[c(3:4)] <- 1
+vetorNum3
+vetorNum3[c(3,4,5)] <- 2
+vetorNum3
+vetorNum3[5] = NA
+sd(vetorNum3)
+sd(vetorNum3, na.rm=TRUEL)
+q() # Encerrar o R # Você quer salvar a sua seção de trabalho atual? - Objetos e variáveis criados
+# será carregado novamente
+history()

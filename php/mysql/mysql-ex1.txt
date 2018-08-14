@@ -1,0 +1,35 @@
+# Terceiro icone: Um cilindro com um +
+# Name: dbphp7
+# Default Collation: utf8 - utf8_general_ci
+# ci = case insensitive
+# Devera haver um botao chamado apply clique nele, se nao estiver aparecendo. Clicar nos icones das janelas com uma barra lateral para desaparecer informacao e aparecer o botao.
+
+USE dbphp7;
+
+CREATE TABLE tb_usuarios ( 
+	idusuario INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+	deslogin VARCHAR(64) NOT NULL,
+	dessenha VARCHAR(256) NOT NULL,
+	dtcadastro TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP()
+);
+
+SHOW TABLES;
+
+# OU clicar em um botao com suas setas para atualizar o campo SCHEMAS
+
+INSERT INTO tb_usuarios (deslogin, dessenha) VALUES ('root', 'a1b2c3');
+
+SELECT * FROM tb_usuarios;
+
+UPDATE tb_usuarios SET dessenhai '123456' WHERE idusuario = 1;
+
+# Caso a tabela nao atualize com o update
+# Edit -> Preferences -> SQL Editor, ultima opcao Safe Updates deselecionar e OK.
+# OU UTILIZAR O safe update com o parametro LIMIT o que eh o mais recomendavel
+
+# Entao rode novamente com o parametro LIMIT
+UPDATE tb_usuarios SET dessenha = '123456' WHERE idusuario = 1 LIMIT 1;
+
+DELETE FROM tb_usuarios WHERE idusuario = 1;
+
+

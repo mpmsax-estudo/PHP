@@ -3,12 +3,15 @@ git add *;
 git status;
 git commit -m "Primeiro Commit";
 # UM DESSES COMANDOS ADICIONOU O GIT MASTER
-175  git remote origin master https://github.com/mpmsax-estudo/PHP
-177  git remote add origin master https://github.com/mpmsax-estudo/PHP.git
-179  git remote add origin master PHP https://github.com/mpmsax-estudo/PHP.git
-180  git push origin master PHP https://github.com/mpmsax-estudo/PHP.git
-183  git push origin master https://github.com/mpmsax-estudo/PHP.git
+git remote add origin master https://github.com/mpmsax-estudo/PHP.git;
+git push origin master;
 git remote show origin;
+
+# git init
+# github -> repositorios -> new -> nome do repositorio: cursoPHP7-DAO -> Create Repository
+# Selecionar HTTPS e copiar endereco
+# git remote add origin (colar link)
+# git pull origin master;
 
 # Upload files to GitHub
 git push origin master;

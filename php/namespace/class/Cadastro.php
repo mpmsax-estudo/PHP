@@ -1,4 +1,10 @@
 <?php
+
+// Dependem um do outro:
+// namespace/class/Cliente/Cadastro.php
+// namespace/class/Cadastro.php
+// namespace/index.php
+// namespace/config.php
 class Cadastro {
 
 	private $nome;
