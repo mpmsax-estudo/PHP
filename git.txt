@@ -21,3 +21,6 @@ git push origin master;
 # Download files from GitHub
 git clone https://github.com/mpmsax-estudo/PHP.git;
 
+# Soluçao para o Erro:
+# antes copiar .git: cp -a .git .git-old
+https://stackoverflow.com/questions/11706215/how-to-fix-git-error-object-file-is-empty
