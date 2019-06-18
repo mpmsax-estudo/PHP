@@ -14,8 +14,8 @@ git commit -m "Primeiro Commit";
 
 # Upload files to GitHub
 git push origin master;
-#Username for 'https://github.com': mpmsax@gmail.com
-#Password for 'https://mpmsax@gmail.com@github.com':
+#Username:
+#Password:
 
 # Download files from GitHub
 git clone https://github.com/mpmsax-estudo/PHP.git;

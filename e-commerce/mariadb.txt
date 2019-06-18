@@ -1,0 +1,16 @@
+#Instalar mariadb e workbench mariadb-server-10.3.12-10
+sudo dnf install mariadb mariadb-server
+sudo dnf install mysql-workbench-community-8.0.16-1.fc29.x86_64.rpm 
+sudo systemctl enable mariadb
+sudo systemctl start mariadb
+mysql-workbench
+
+# mysql -u root
+
+# Executar Script
+# ...
+
+# Trocar senha de root do Banco de Dados
+# For MySQL 5.7.6 and newer as well as MariaDB 10.1.20 and newer, use the following command.
+mysql -u root;
+MariaDB [(none)]> ALTER USER 'root'@'localhost' IDENTIFIED BY 'password';
